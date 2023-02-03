@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="97_callbacks, callback hell, the pyramid of doom.js" defer></script> -->
+  <!-- <script src="103_Callback hell to flat code.js" defer></script> -->
+  <style>
+    body{font-family: Arial,sans-serif}
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <!-- <h1 class="heading1">HelloWorld</h1> -->
+  <!-- <h1 class="heading2">HelloWorld</h1> -->
+  <!-- <h1 class="heading3">HelloWorld</h1> -->
+  <!-- <h1 class="heading4">HelloWorld</h1> -->
+  <!-- <h1 class="heading5">HelloWorld</h1> -->
+  <!-- <h1 class="heading6">HelloWorld</h1>  -->
+  <!-- <h1 class="heading7">HelloWorld</h1>  -->
+  <!-- <script src="0_HelloWorld.js"></script> -->
+  <!-- <script src="1_comments.js"></script> -->
+  <!-- <script src="2_1_variables.js"></script> -->
+  <!-- <script src="2_2_use_strict_module.js"></script> -->
+  <!-- <script src="3_Rules_for_naming_variables.js"></script> -->
+  <!-- <script src="4_var_let_keyword.js"></script> -->
+  <!-- <script src="5_const_keyword.js"></script> -->
+  <!-- <script src="6_string_indexing.js"></script> -->
+  <!-- <script src="7_string_methods.js"></script> -->
+  <!-- <script src="8_conversion_num_to_str_viceversa.js"></script> -->
+  <!-- <script src="9_template_string.js"></script> -->
+  <!-- <script src="10_undefined_null_BigInt.js"></script> -->
+  <!-- <script src="11_booleans_comparisions_operator.js"></script> -->
+  <!-- <script src="12_if_else_truthy_falsy_values.js"></script> -->
+  <!-- <script src="13_ternary_opeartor.js"></script> -->
+  <!-- <script src="14_and_or_operator.js"></script> -->
+  <!-- <script src="15_nested_if_else.js"></script> -->
+  <!-- <script src="16_if_else if_else.js"></script> -->
+  <!-- <script src="17_switch_statement.js"></script> -->
+  <!-- <script src="18_while_loop.js"></script> -->
+  <!-- <script src="19_for_loop.js"></script> -->
+  <!-- <script src="20_break_continue_keyword.js"></script> -->
+  <!-- <script src="21_do while_loop.js"></script> -->
+  <!-- <script src="22_array.js"></script> -->
+  <!-- <script src="23_array_methods.js"></script> -->
+  <!-- <script src="24_primitive_reference_datatypes.js"></script> -->
+  <!-- <script src="25_how_to_clone_and_concatenate_array.js"></script> -->
+  <!-- <script src="26_cloning_concatenating_simultaneously.js"></script> -->
+  <!-- <script src="27_for_loop_array.js"></script> -->
+  <!-- <script src="28_Use const for creating arrays.js"></script> -->
+  <!-- <script src="29 _While loop in array.js"></script> -->
+  <!-- <script src="30_For of loop.js"></script> -->
+  <!-- <script src="31_For in loop.js"></script> -->
+  <!-- <script src="32_ Array destructuring.js"></script> -->
+  <!-- <script src="33_Introduction to object.js"></script> -->
+  <!-- <script src="34_Dot vs bracket notation.js"></script> -->
+  <!-- <script src="35_How to iterate objects.js"></script> -->
+  <!-- <script src="36_Computed Properties.js"></script> -->
+  <!-- <script src="37_Spread operator in array and objects.js"></script> -->
+  <!-- <script src="38_Object destructuring.js"></script> -->
+  <!-- <script src="39_Object inside array.js"></script> -->
+  <!-- <script src="40_Nested destructuring.js"></script> -->
+  <!-- <script src="41_ Function declaration_definitions.js"></script> -->
+  <!-- <script src="42_Function Expression.js"></script> -->
+  <!-- <script src="43_Arrow_function.js"></script> -->
+  <!-- <script src="44_Hoisting introduction .js"></script> -->
+  <!-- <script src="45_ Functions inside functions.js"></script> -->
+  <!-- <script src="46_Lexical Scope.js"></script> -->
+  <!-- <script src="47_Block scope vs function scope.js"></script> -->
+  <!-- <script src="48_Default parameters.js"></script> -->
+  <!-- <script src="49_Rest parameters.js"></script> -->
+  <!-- <script src="50_Parameters destructuring.js"></script> -->
+  <!-- <script src="51_ callback functions.js"></script> -->
+  <!-- <script src="52_ Function returning function.js"></script> -->
+  <!-- <script src="53_Array_methods_forEach method.js"></script> -->
+  <!-- <script src="54_Array_methods_map method.js"></script> -->
+  <!-- <script src="55_Array_methods_filter method.js"></script> -->
+  <!-- <script src="56_Array_methods_ reduce method.js"></script> -->
+  <!-- <script src="57_Array_methods_sort method.js"></script> -->
+  <!-- <script src="58_Array_methods_find method.js"></script> -->
+  <!-- <script src="59_Array_methods_every method.js"></script> -->
+  <!-- <script src="60_Array_methods_some method.js"></script> -->
+  <!-- <script src="61_Array_methods_fill method.js"></script> -->
+  <!-- <script src="62_Array_methods_splice method.js"></script> -->
+  <!-- <script src="63_Iterables,array like objects.js"></script> -->
+  <!-- <script src="64_sets_Iterables.js"></script> -->
+  <!-- <script src="65_map data structure.js"></script> -->
+  <!-- <script src="66_clone using Object.assign.js"></script> -->
+  <!-- <script src="67_ optional chaining.js"></script> -->
+  <!-- <script src="68_ Create your own methods.js"></script> -->
+  <!-- <script src="69_This keyword.js"></script> -->
+  <!-- <script src="70_call, apply, bind methods.js"></script> -->
+  <!-- <script src="71_small warning.js"></script> -->
+  <!-- <script src="72_arrow functions and this.js"></script> -->
+  <!-- <script src="73_short syntax.js"></script> -->
+  <!-- <script src="74_ create functions to create multiple objects.js"></script> -->
+  <!-- <script src="75_store methods in different object.js"></script> -->
+  <!-- <script src="76_solution using object.create.js"></script> -->
+  <!-- <script src="77.What is prototype.js"></script> -->
+  <!-- <script src="78_Use prototype.js"></script> -->
+  <!-- <script src="79_New keyword.js"></script> -->
+  <!-- <script src="80_hasOwnProperty.js"></script> -->
+  <!-- <script src="81_more about prototype.js"></script> -->
+  <!-- <script src="82_class keyword.js"></script> -->
+  <!-- <script src="83_class practice and extends keyword.js"></script> -->
+  <!-- <script src="84_super keyword.js"></script> -->
+  <!-- <script src="85_same method in base class.js"></script> -->
+  <!-- <script src="86_getters and setters.js"></script> -->
+  <!-- <script src="87_static methods and properties.js"></script> -->
+  <!-- <script src="88_ How javascript works overview.js"></script> -->
+  <!-- <script src="89_How javascript works overview-function Expression_var.js"></script> -->
+  <!-- <script src="90_How javascript works overview-function Expression_let_const.js"></script> -->
+  <!-- <script src="91_Function execution context.js"></script> -->
+  <!-- <script src="92_lexical environment scope chain.js"></script> -->
+  <!-- <script src="93_Intro to closures.js"></script> -->
+  <!-- <script src="94_Synchronous and asynchronous programming setTimeout.js"></script> -->
+  <!-- <script src="95_ setInterval.js"></script> -->
+  <!-- <script src="96_callbacks in general.js"></script> -->
+  <!-- <script src="97_callbacks, callback hell, the pyramid of doom.js"></script> -->
+  <!-- <script src="99_Intro to promise.js"></script> -->
+  <!-- <script src="100_Function returning a promise.js"></script> -->
+  <!-- <script src="101_ Promise and setTimeout Together.js"></script> -->
+  <!-- <script src="102_Promise.resolve and promise chaining.js"></script> -->
+  <!-- <script src="104_ AJAX Basic Theory.js"></script> -->
+  <!-- <script src="105_XHRXMLHTTPRequest.js"></script> -->
+  <!-- <script src="106_fetch API.js"></script> -->
+  <script src="107_ Consume Promises Using Async Await.js"></script>
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+  <!-- <script src="1.js"></script> -->
+  <!-- <script src="2.js"></script> -->
+  <!-- <script src="3.js"></script> -->
+  <!-- <script src="4.js"></script> -->
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+  <!-- <script src="1.js"></script> -->
+  <!-- <script src="2.js"></script> -->
+  <!-- <script src="3.js"></script> -->
+  <!-- <script src="4.js"></script> -->
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+  <!-- <script src="1.js"></script> -->
+  <!-- <script src="2.js"></script> -->
+  <!-- <script src="3.js"></script> -->
+  <!-- <script src="4.js"></script> -->
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+  <!-- <script src="1.js"></script> -->
+  <!-- <script src="2.js"></script> -->
+  <!-- <script src="3.js"></script> -->
+  <!-- <script src="4.js"></script> -->
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+  <!-- <script src="1.js"></script> -->
+  <!-- <script src="2.js"></script> -->
+  <!-- <script src="3.js"></script> -->
+  <!-- <script src="4.js"></script> -->
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+  <!-- <script src="1.js"></script> -->
+  <!-- <script src="2.js"></script> -->
+  <!-- <script src="3.js"></script> -->
+  <!-- <script src="4.js"></script> -->
+  <!-- <script src="5.js"></script> -->
+  <!-- <script src="6.js"></script> -->
+  <!-- <script src="7.js"></script> -->
+  <!-- <script src="8.js"></script> -->
+  <!-- <script src="9.js"></script> -->
+  <!-- <script src="10.js"></script> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
